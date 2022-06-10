@@ -1,4 +1,4 @@
-# Brave Browser
+# Galli Browser
 
 
 ## Overview
