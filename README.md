@@ -3,12 +3,12 @@
 
 ## Overview
 
-This repository holds the build tools needed to build the Brave desktop browser for macOS, Windows, and Linux.  In particular, it fetches and syncs code from the projects defined in `package.json` and `src/brave/DEPS`:
+This repository holds the build tools needed to build the Galli desktop browser for Windows.  In particular, it fetches and syncs code from the projects defined in `package.json` and `src/brave/DEPS`:
 
   - [Chromium](https://chromium.googlesource.com/chromium/src.git)
     - Fetches code via `depot_tools`.
     - sets the branch for Chromium (ex: 65.0.3325.181).
-  - [brave-core](https://github.com/brave/brave-core)
+  - [galli-core](https://github.com/4444dogs/galli-core)
     - Mounted at `src/brave`.
     - Maintains patches for 3rd party Chromium code.
   - [adblock-rust](https://github.com/brave/adblock-rust)
@@ -17,26 +17,11 @@ This repository holds the build tools needed to build the Brave desktop browser 
 
 ## Downloads
 
-You can [visit our website](https://brave.com/download) to get the latest stable release.
-
-## Other repositories
-
-For other versions of our browser, please see:
-
-* iOS - [brave/brave-ios](https://github.com/brave/brave-ios)
+Galli is currently only usable from source.
 
 ## Contributing
 
 Please see the [contributing guidelines](./CONTRIBUTING.md).
-
-## Community
-
-[Join the Q&A community](https://community.brave.com/) if you'd like to get more involved with Brave. You can [ask for help](https://community.brave.com/c/support-and-troubleshooting),
-[discuss features you'd like to see](https://community.brave.com/c/brave-feature-requests), and a lot more. We'd love to have your help so that we can continue improving Brave.
-
-Help us translate Brave to your language by submitting translations at https://www.transifex.com/brave/brave/.
-
-Follow [@brave](https://twitter.com/brave) on Twitter for important news and announcements.
 
 ## Install prerequisites
 
@@ -69,7 +54,7 @@ npm config set target_os android
 npm config set target_arch arm
 ```
 
-## Build Brave
+## Build Galli
 The default build type is component.
 
 ```
@@ -104,12 +89,12 @@ npm run build -- Debug
 
 Brave staff may also want to try [Goma](https://github.com/brave/devops/wiki/Faster-browser-builds#goma) for faster builds.
 
-## Run Brave
+## Run Galli
 To start the build:
 
 `npm start [Release|Component|Static|Debug]`
 
-# Update Brave
+# Update Galli
 
 `npm run sync -- [--force] [--init] [--create] [brave_core_ref]`
 
